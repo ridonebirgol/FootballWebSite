@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 3, 2016 2:08:24 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.football.site.entity.LeaguesCountry" table="leagues_country" catalog="footballsite" optimistic-lock="version">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="record_id" />
+            <generator class="identity" />
+        </id>
+        <property name="countryName" type="string">
+            <column name="country_name" length="100" />
+        </property>
+        <property name="countryCode" type="string">
+            <column name="country_code" length="100" />
+        </property>
+        <property name="orderNo" type="java.lang.Integer">
+            <column name="order_no" />
+        </property>
+        <property name="countryFlag" type="binary">
+            <column name="country_flag" />
+        </property>
+    </class>
+</hibernate-mapping>

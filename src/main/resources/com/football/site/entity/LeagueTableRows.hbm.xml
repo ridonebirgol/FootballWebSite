@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 3, 2016 2:08:24 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.football.site.entity.LeagueTableRows" table="league_table_rows" catalog="footballsite">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="record_id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="leagueTableId" type="java.lang.Integer">
+            <column name="league_table_id" />
+        </property>
+        <property name="position" type="string">
+            <column name="position" length="45" />
+        </property>
+        <property name="teamName" type="string">
+            <column name="teamName" length="100" />
+        </property>
+        <property name="playedGames" type="java.lang.Integer">
+            <column name="playedGames" />
+        </property>
+        <property name="points" type="java.lang.Integer">
+            <column name="points" />
+        </property>
+        <property name="goals" type="java.lang.Integer">
+            <column name="goals" />
+        </property>
+        <property name="goalsAgainst" type="java.lang.Integer">
+            <column name="goalsAgainst" />
+        </property>
+        <property name="goalDifference" type="java.lang.Integer">
+            <column name="goalDifference" />
+        </property>
+        <property name="wins" type="java.lang.Integer">
+            <column name="wins" />
+        </property>
+        <property name="draws" type="java.lang.Integer">
+            <column name="draws" />
+        </property>
+        <property name="losses" type="java.lang.Integer">
+            <column name="losses" />
+        </property>
+        <property name="crestUrl" type="string">
+            <column name="crestUrl" length="150" />
+        </property>
+        <property name="crestPicture" type="binary">
+            <column name="crestPicture" />
+        </property>
+    </class>
+</hibernate-mapping>

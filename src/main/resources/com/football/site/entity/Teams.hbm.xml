@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 3, 2016 2:08:24 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.football.site.entity.Teams" table="teams" catalog="footballsite">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="record_id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="leagueId" type="java.lang.Integer">
+            <column name="league_id" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="100" />
+        </property>
+        <property name="code" type="string">
+            <column name="code" length="100" />
+        </property>
+        <property name="shortName" type="string">
+            <column name="shortName" length="100" />
+        </property>
+        <property name="crestUrl" type="string">
+            <column name="crestUrl" length="150" />
+        </property>
+        <property name="crestPicture" type="binary">
+            <column name="crestPicture" />
+        </property>
+    </class>
+</hibernate-mapping>

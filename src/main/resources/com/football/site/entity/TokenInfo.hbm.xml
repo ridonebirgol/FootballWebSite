@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 3, 2016 2:08:24 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.football.site.entity.TokenInfo" table="token_info" catalog="footballsite">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="recordId" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="emailAddress" type="string">
+            <column name="email_address" length="100" />
+        </property>
+        <property name="tokenInfo" type="string">
+            <column name="token_info" length="100" />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="create_date" length="19" />
+        </property>
+        <property name="counterNumber" type="java.lang.Integer">
+            <column name="counter_number" />
+        </property>
+    </class>
+</hibernate-mapping>

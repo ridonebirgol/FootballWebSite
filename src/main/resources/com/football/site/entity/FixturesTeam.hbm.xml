@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 3, 2016 2:08:24 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.football.site.entity.FixturesTeam" table="fixtures_team" catalog="footballsite">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="record_id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="teamId" type="java.lang.Integer">
+            <column name="team_id" />
+        </property>
+        <property name="date" type="timestamp">
+            <column name="date" length="19" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="20" />
+        </property>
+        <property name="matchday" type="java.lang.Integer">
+            <column name="matchday" />
+        </property>
+        <property name="homeTeamName" type="string">
+            <column name="homeTeamName" length="100" />
+        </property>
+        <property name="awayTeamName" type="string">
+            <column name="awayTeamName" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

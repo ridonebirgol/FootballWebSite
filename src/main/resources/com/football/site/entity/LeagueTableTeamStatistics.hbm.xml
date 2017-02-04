@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 3, 2016 2:08:24 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.football.site.entity.LeagueTableTeamStatistics" table="league_table_team_statistics" catalog="footballsite">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="record_id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="leagueTableRowId" type="java.lang.Integer">
+            <column name="league_table_row_id" />
+        </property>
+        <property name="statisticOwn" type="string">
+            <column name="statistic_own" length="10" />
+        </property>
+        <property name="goals" type="java.lang.Integer">
+            <column name="goals" />
+        </property>
+        <property name="goalsAgainst" type="java.lang.Integer">
+            <column name="goalsAgainst" />
+        </property>
+        <property name="wins" type="java.lang.Integer">
+            <column name="wins" />
+        </property>
+        <property name="draws" type="java.lang.Integer">
+            <column name="draws" />
+        </property>
+        <property name="losses" type="java.lang.Integer">
+            <column name="losses" />
+        </property>
+    </class>
+</hibernate-mapping>

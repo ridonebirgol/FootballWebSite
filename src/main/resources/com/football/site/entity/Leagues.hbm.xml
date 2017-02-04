@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 3, 2016 2:08:24 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.football.site.entity.Leagues" table="leagues" catalog="footballsite">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="record_id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="caption" type="string">
+            <column name="caption" length="100" />
+        </property>
+        <property name="league" type="string">
+            <column name="league" length="100" />
+        </property>
+        <property name="year" type="java.lang.Integer">
+            <column name="year" />
+        </property>
+        <property name="numberOfTeams" type="java.lang.Integer">
+            <column name="numberOfTeams" />
+        </property>
+        <property name="numberOfGames" type="java.lang.Integer">
+            <column name="numberOfGames" />
+        </property>
+        <property name="selfLink" type="string">
+            <column name="self_link" length="150" />
+        </property>
+        <property name="lastUpdated" type="timestamp">
+            <column name="lastUpdated" length="19" />
+        </property>
+        <property name="countryId" type="java.lang.Integer">
+            <column name="country_id" />
+        </property>
+        <property name="leagueIcon" type="binary">
+            <column name="league_icon" />
+        </property>
+        <property name="orderNo" type="java.lang.Integer">
+            <column name="order_no" />
+        </property>        
+    </class>
+</hibernate-mapping>

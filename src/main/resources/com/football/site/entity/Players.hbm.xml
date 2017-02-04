@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 3, 2016 2:08:24 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.football.site.entity.Players" table="players" catalog="footballsite">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="record_id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="teamsId" type="java.lang.Integer">
+            <column name="teams_id" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="100" />
+        </property>
+        <property name="position" type="string">
+            <column name="position" length="45" />
+        </property>
+        <property name="jerseyNumber" type="java.lang.Integer">
+            <column name="jerseyNumber" />
+        </property>
+        <property name="dateOfBirth" type="timestamp">
+            <column name="dateOfBirth" length="19" />
+        </property>
+        <property name="nationality" type="string">
+            <column name="nationality" length="100" />
+        </property>
+        <property name="contractUntil" type="timestamp">
+            <column name="contractUntil" length="19" />
+        </property>
+        <property name="marketValue" type="string">
+            <column name="marketValue" length="100" />
+        </property>
+        <property name="marketValueNumber" type="java.lang.Double">
+            <column name="marketValueNumber" precision="20" />
+        </property>
+        <property name="marketValueMoneyType" type="string">
+            <column name="marketValueMoneyType" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
