@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="footballsite"/>
+  <table-filter match-name="league_table_rows"/>
+  <table-filter match-name="fixtures_team_match_result"/>
+  <table-filter match-name="user_info"/>
+  <table-filter match-name="fixtures_match_result"/>
+  <table-filter match-name="players"/>
+  <table-filter match-name="leagues"/>
+  <table-filter match-name="league_table_team_statistics"/>
+  <table-filter match-name="teams"/>
+  <table-filter match-name="fixtures_team"/>
+  <table-filter match-name="leaguetable"/>
+  <table-filter match-name="fixtures"/>
+  <table-filter match-name="leagues_country"/>  
+</hibernate-reverse-engineering>
